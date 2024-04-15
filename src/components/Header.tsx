@@ -1,3 +1,4 @@
+import { LayoutGrid } from 'lucide-react'
 import Image from 'next/image'
 import { ReactNode } from 'react'
 
@@ -17,7 +18,9 @@ export function Header({ children }: HeaderProps) {
         />
       </div>
       <div>
-        <h2></h2>
+        <h2 className="flex gap-2 items-center border rounded-full px-10 p-2 bg-slate-200">
+          <LayoutGrid className="w-5 h-5" /> Category
+        </h2>
       </div>
 
       {children}
