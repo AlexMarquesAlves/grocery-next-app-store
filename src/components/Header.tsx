@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ReactNode } from 'react'
 
 interface HeaderProps {
@@ -7,7 +8,18 @@ interface HeaderProps {
 export function Header({ children }: HeaderProps) {
   return (
     <>
-      <h1>Header</h1>
+      <div>
+        <Image
+          src="/logo.png"
+          alt="cesta de compras"
+          width={150}
+          height={100}
+        />
+      </div>
+      <div>
+        <h2></h2>
+      </div>
+
       {children}
     </>
   )
