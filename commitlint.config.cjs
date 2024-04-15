@@ -13,12 +13,12 @@ module.exports = {
           return [
             /^[A-Z]/.test(raw),
             'Commit message must start with a capital letter',
-          ];
+          ]
         },
         'header-end-period': ({ header }) => {
-          return [/\.$/.test(header), 'Commit message must end with a period'];
+          return [/\.$/.test(header), 'Commit message must end with a period']
         },
       },
     },
   ],
-};
+}
