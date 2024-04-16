@@ -10,7 +10,7 @@ interface HeaderProps {
 export function Header({ children }: HeaderProps) {
   return (
     <>
-      <div className="p-5 shadow-md flex">
+      <div className="p-5 shadow-md flex justify-between">
         <div className="flex items-center gap-8">
           <Image
             src="/logo.png"
@@ -33,7 +33,7 @@ export function Header({ children }: HeaderProps) {
           </div>
         </div>
 
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-5 items-center ">
           <h2 className="flex gap-2 items-center text-lg">
             <ShoppingBag /> 0
           </h2>
