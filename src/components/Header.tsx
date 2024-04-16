@@ -1,6 +1,7 @@
 import { LayoutGrid, Search } from 'lucide-react'
 import Image from 'next/image'
 import { ReactNode } from 'react'
+import { Button } from './ui/button'
 
 interface HeaderProps {
   children: ReactNode
@@ -34,7 +35,7 @@ export function Header({ children }: HeaderProps) {
       </div>
 
       <div>
-        <button></button>
+        <Button>Login</Button>
       </div>
       {children}
     </>
