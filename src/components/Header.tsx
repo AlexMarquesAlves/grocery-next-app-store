@@ -23,7 +23,7 @@ export function Header({ children }: HeaderProps) {
 
         <div className="flex gap-3 items-center border rounded-full p-2 m-5">
           <Search />
-          <input type="text" placeholder="Search..." />
+          <input className="outline-none" type="text" placeholder="Search..." />
         </div>
       </div>
 
