@@ -2,6 +2,14 @@ import { LayoutGrid, Search, ShoppingBag } from 'lucide-react'
 import Image from 'next/image'
 import { ReactNode } from 'react'
 import { Button } from './ui/button'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
 
 interface HeaderProps {
   children: ReactNode
@@ -22,6 +30,18 @@ export function Header({ children }: HeaderProps) {
           <h2 className="hidden md:flex gap-2 items-center border rounded-full px-10 p-2 bg-slate-200">
             <LayoutGrid className="w-5 h-5" /> Category
           </h2>
+
+          <DropdownMenu>
+            <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>Profile</DropdownMenuItem>
+              <DropdownMenuItem>Billing</DropdownMenuItem>
+              <DropdownMenuItem>Team</DropdownMenuItem>
+              <DropdownMenuItem>Subscription</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
 
           <div className="md:flex gap-3 items-center border rounded-full p-2 m-5 hidden">
             <Search />
