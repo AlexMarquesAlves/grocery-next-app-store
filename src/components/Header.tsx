@@ -1,4 +1,4 @@
-import { LayoutGrid, Search } from 'lucide-react'
+import { LayoutGrid, Search, ShoppingBag } from 'lucide-react'
 import Image from 'next/image'
 import { ReactNode } from 'react'
 import { Button } from './ui/button'
@@ -35,6 +35,9 @@ export function Header({ children }: HeaderProps) {
       </div>
 
       <div>
+        <h2>
+          <ShoppingBag /> 0
+        </h2>
         <Button>Login</Button>
       </div>
       {children}
