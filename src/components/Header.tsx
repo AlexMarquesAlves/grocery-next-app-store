@@ -29,7 +29,7 @@ export function Header({ children }: HeaderProps) {
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <h2 className="hidden md:flex gap-2 items-center border rounded-full px-10 p-2 bg-slate-200 ">
+              <h2 className="hidden md:flex gap-2 items-center border rounded-full px-10 p-2 bg-slate-200 cursor-pointer">
                 <LayoutGrid className="w-5 h-5" /> Category
               </h2>
             </DropdownMenuTrigger>
