@@ -21,7 +21,7 @@ export function Header({ children }: HeaderProps) {
           <LayoutGrid className="w-5 h-5" /> Category
         </h2>
 
-        <div>
+        <div className="flex gap-3 items-center border rounded-full p-2 m-5">
           <Search />
           <input type="text" placeholder="Search..." />
         </div>
