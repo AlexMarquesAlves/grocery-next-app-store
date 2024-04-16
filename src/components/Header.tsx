@@ -34,8 +34,8 @@ export function Header({ children }: HeaderProps) {
         </div>
       </div>
 
-      <div>
-        <h2>
+      <div className="flex gap-5">
+        <h2 className="flex gap-2 items-center text-lg">
           <ShoppingBag /> 0
         </h2>
         <Button>Login</Button>
