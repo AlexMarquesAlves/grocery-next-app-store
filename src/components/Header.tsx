@@ -28,13 +28,13 @@ export function Header({ children }: HeaderProps) {
           />
 
           <DropdownMenu>
-            <DropdownMenuTrigger>
-              <h2 className="hidden md:flex gap-2 items-center border rounded-full px-10 p-2 bg-slate-200">
+            <DropdownMenuTrigger asChild>
+              <h2 className="hidden md:flex gap-2 items-center border rounded-full px-10 p-2 bg-slate-200 ">
                 <LayoutGrid className="w-5 h-5" /> Category
               </h2>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuLabel>Browse Category</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem>Profile</DropdownMenuItem>
               <DropdownMenuItem>Billing</DropdownMenuItem>
