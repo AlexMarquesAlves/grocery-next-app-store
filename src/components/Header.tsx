@@ -33,6 +33,9 @@ export function Header({ children }: HeaderProps) {
         </div>
       </div>
 
+      <div>
+        <button></button>
+      </div>
       {children}
     </>
   )
